@@ -14,4 +14,3 @@ mv bulma/bulma dist
 mv bulma/_bulma.scss dist
 cd $DIR/../bulma
 git reset --hard
-git checkout master

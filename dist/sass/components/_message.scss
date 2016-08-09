@@ -9,7 +9,7 @@
 }
 
 .message-header {
-  background: $text;
+  background-color: $text;
   border-radius: $radius $radius 0 0;
   color: $text-invert;
   padding: 7px 10px;
@@ -27,7 +27,7 @@
 .message {
   @extend .block;
 
-  background: $background;
+  background-color: $background;
   border-radius: $radius;
 
   // Colors
@@ -38,10 +38,10 @@
     $darkness: max(lightness($color) - 10%, lightness($color));
 
     &.is-#{$name} {
-      background: lighten($color, $lightning);
+      background-color: lighten($color, $lightning);
 
       .message-header {
-        background: $color;
+        background-color: $color;
         color: $color-invert;
       }
 

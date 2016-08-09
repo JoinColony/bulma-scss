@@ -1,6 +1,6 @@
 Package.describe({
   name: 'chmanie:bulma-scss',
-  version: '0.0.28',
+  version: '0.1.2',
   // Brief, one-line summary of the package.
   summary: 'This is an packaged scss version of the popular bulma css framework',
   // URL to the Git repository containing the source code for this package.
@@ -11,10 +11,10 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.2');
+  api.versionsFrom('METEOR@1.3');
   api.use([
     'meteor',
-    'fourseven:scss@3.4.1'
+    'fourseven:scss@3.8.0_1'
   ]);
   api.addFiles([
     'dist/_bulma.scss',
@@ -32,7 +32,6 @@ Package.onUse(function(api) {
     'dist/sass/components/_message.scss',
     'dist/sass/components/_modal.scss',
     'dist/sass/components/_nav.scss',
-    'dist/sass/components/_navbar.scss',
     'dist/sass/components/_pagination.scss',
     'dist/sass/components/_panel.scss',
     'dist/sass/components/_tabs.scss',
@@ -48,7 +47,6 @@ Package.onUse(function(api) {
     'dist/sass/elements/_table.scss',
     'dist/sass/elements/_title.scss',
     'dist/sass/layout/_footer.scss',
-    'dist/sass/layout/_header.scss',
     'dist/sass/layout/_hero.scss',
     'dist/sass/layout/_layout.scss',
     'dist/sass/layout/_section.scss',

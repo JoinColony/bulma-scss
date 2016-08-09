@@ -21,7 +21,7 @@
 
     // Modifiers
     &.is-flexible {
-      flex: 1;
+      flex-grow: 1;
     }
   }
 }
@@ -75,7 +75,7 @@
       }
 
       &:not(.is-narrow) {
-        flex: 1;
+        flex-grow: 1;
       }
     }
   }
@@ -86,7 +86,7 @@
 
     & > .level-item {
       &:not(.is-narrow) {
-        flex: 1;
+        flex-grow: 1;
       }
     }
   }

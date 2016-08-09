@@ -205,7 +205,7 @@
 
 
   @include tablet {
-    flex: 1;
+    flex-grow: 1;
     margin-right: 20px;
     padding-top: 7px;
     text-align: right;
@@ -258,7 +258,7 @@
       }
 
       &.is-expanded {
-        flex: 1;
+        flex-grow: 1;
       }
     }
 
@@ -274,7 +274,7 @@
       .button,
       .input,
       .select {
-        flex: 1;
+        flex-grow: 1;
       }
     }
   }
@@ -391,7 +391,7 @@
       }
 
       &.is-expanded {
-        flex: 1;
+        flex-grow: 1;
       }
     }
 
@@ -410,7 +410,7 @@
 
       & > .control {
         display: flex;
-        flex: 5;
+        flex-grow: 5;
       }
     }
   }

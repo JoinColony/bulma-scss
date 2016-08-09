@@ -23,7 +23,7 @@
   ul {
     align-items: center;
     display: flex;
-    flex: 1;
+    flex-grow: 1;
     justify-content: center;
   }
 
@@ -40,7 +40,7 @@
     }
 
     li {
-      flex: 1;
+      flex-grow: 1;
     }
 
     ul {

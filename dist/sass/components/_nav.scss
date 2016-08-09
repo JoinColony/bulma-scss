@@ -80,7 +80,7 @@ a.nav-item {
 .nav-menu {
   // Responsiveness
   @include mobile {
-    background: $white;
+    background-color: $white;
     box-shadow: 0 4px 7px rgba($black, 0.1);
     left: 0;
     display: none;
@@ -97,12 +97,18 @@ a.nav-item {
       display: block;
     }
   }
+
+
+  @include tablet-only {
+    padding-right: 20px;
+  }
 }
 
 .nav-left {
   align-items: stretch;
   display: flex;
-  flex: 1;
+  flex-basis: 0;
+  flex-grow: 1;
   justify-content: flex-start;
   overflow: hidden;
   overflow-x: auto;
@@ -113,6 +119,8 @@ a.nav-item {
   align-items: stretch;
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-right {
@@ -120,7 +128,8 @@ a.nav-item {
   @include tablet {
     align-items: stretch;
     display: flex;
-    flex: 1;
+    flex-basis: 0;
+    flex-grow: 1;
     justify-content: flex-end;
   }
 }
@@ -129,7 +138,7 @@ a.nav-item {
 
 .nav {
   align-items: stretch;
-  background: $white;
+  background-color: $white;
   display: flex;
   min-height: $nav-height;
   position: relative;
@@ -172,5 +181,17 @@ a.nav-item {
   // Modifiers
   &.has-shadow {
     box-shadow: 0 2px 3px rgba($black, 0.1);
+  }
+
+  // Responsiveness
+  @include touch {
+    & > .container,
+    .container > & {
+      & > .nav-left {
+        & > .nav-item.is-brand:first-child {
+          padding-left: 20px;
+        }
+      }
+    }
   }
 }

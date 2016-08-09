@@ -58,7 +58,7 @@
 }
 
 .hero-body {
-  flex: 1;
+  flex-grow: 1;
   padding: 40px 20px;
 
   // Responsiveness
@@ -72,7 +72,7 @@
 
 .hero {
   align-items: stretch;
-  background: $white;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,7 +94,7 @@
     $color-invert: nth($pair, 2);
 
     &.is-#{$name} {
-      background: $color;
+      background-color: $color;
       color: $color-invert;
 
       .title {
@@ -121,7 +121,7 @@
 
       .nav-menu {
         @include mobile {
-          background: $color;
+          background-color: $color;
         }
       }
 
@@ -157,14 +157,14 @@
             color: $color-invert;
 
             &:hover {
-              background: rgba($black, 0.1);
+              background-color: rgba($black, 0.1);
             }
           }
 
           li.is-active a {
             &,
             &:hover {
-              background: $color-invert;
+              background-color: $color-invert;
               border-color: $color-invert;
               color: $color;
             }
@@ -184,16 +184,16 @@
       @include mobile {
         .nav-toggle {
           span {
-            background: $color-invert;
+            background-color: $color-invert;
           }
 
           &:hover {
-            background: rgba($black, 0.1);
+            background-color: rgba($black, 0.1);
           }
 
           &.is-active {
             span {
-              background: $color-invert;
+              background-color: $color-invert;
             }
           }
         }
@@ -234,7 +234,7 @@
       display: flex;
 
       & > .container {
-        flex: 1;
+        flex-grow: 1;
       }
     }
   }

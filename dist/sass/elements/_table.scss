@@ -1,5 +1,5 @@
 .table {
-  background: $white;
+  background-color: $white;
   color: $text-strong;
   margin-bottom: 20px;
   width: 100%;
@@ -39,7 +39,7 @@
         padding: 8px 10px;
 
         &:hover {
-          background: $link;
+          background-color: $link;
           color: $link-invert;
         }
       }
@@ -58,7 +58,7 @@
 
   tr {
     &:hover {
-      background: $background;
+      background-color: $background;
       color: $text-strong;
     }
   }
@@ -139,14 +139,14 @@
     tbody {
       tr {
         &:hover {
-          background: darken($background, 2%);
+          background-color: darken($background, 2%);
         }
 
         &:nth-child(2n) {
-          background: $background;
+          background-color: $background;
 
           &:hover {
-            background: darken($background, 2%);
+            background-color: darken($background, 2%);
           }
         }
       }

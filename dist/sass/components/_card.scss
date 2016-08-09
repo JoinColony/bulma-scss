@@ -9,7 +9,7 @@
   align-items: flex-start;
   color: $text-strong;
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   font-weight: bold;
   padding: 10px;
 }
@@ -44,7 +44,7 @@
 .card-footer-item {
   align-items: center;
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   justify-content: center;
   padding: 10px;
 
@@ -54,7 +54,7 @@
 }
 
 .card {
-  background: $white;
+  background-color: $white;
   box-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
   color: $text;
   max-width: 100%;
@@ -71,6 +71,6 @@
   }
 
   &.is-rounded {
-    border-radius: 5px;
+    border-radius: $radius-large;
   }
 }

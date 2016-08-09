@@ -12,7 +12,7 @@
 }
 
 .panel-heading {
-  background: $background;
+  background-color: $background;
   border-bottom: 1px solid $border;
   border-radius: 4px 4px 0 0;
   color: $text-strong;
@@ -67,13 +67,13 @@
 
 a.panel-block {
   &:hover {
-    background: $background;
+    background-color: $background;
   }
 }
 
 .panel {
   border: 1px solid $border;
-  border-radius: 5px;
+  border-radius: $radius-large;
 
   &:not(:last-child) {
     margin-bottom: 20px;
